@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/tradeable.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: "Kalam", cursive;
+    color: black;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    font-size: 18px;
+    color: black;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.log-btn{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-weight: bold;
+
+
+}
+.btn{
+display: inline-block;
+text-decoration: none;
+padding: 14px 40px;
+color: rgb(198, 243, 247);
+background-image: linear-gradient(90deg, #5c04a3, #eea1d4);
+font-size: 16px;
+border-radius: 30px;
+border-top-right-radius: 0;
+border-bottom-left-radius: 0;
+transition: 0.5s;
+font-weight: bold;
+}
+.content{
+    margin-top: 4%;
+    max-width: 600px;
+
+}
+.content h1{
+    font-size: 66px;
+    color: white;
+    font-family: "Kalam", cursive;
+}
+.content p{
+    margin: 10px 0 30px;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    animation-delay: 0.5s;
+
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 1s;
+    
+
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-image: linear-gradient(180deg, #3ec9f3, #151616);
+    color: whitesmoke;
+}
+.feature-img{
+    width: 650px;
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+}
+.feature-img.anim{
+    animation-delay: 1.5s;
+
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

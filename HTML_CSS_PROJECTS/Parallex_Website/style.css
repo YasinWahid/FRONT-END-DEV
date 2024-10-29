@@ -1,0 +1,118 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #fff;
+    color: white;
+}
+
+.wrapper_outer {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+
+.logo {
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: "Kalam", cursive;
+    text-align: center;
+    background: linear-gradient(45deg, #ffffff, #000000, #ffffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.btn {
+    padding: 14px 40px;
+    text-align: center;
+    color: rgb(198, 243, 247);
+    background-image: linear-gradient(90deg, #01b3aa, #000000);
+    font-size: 16px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+    background-image: linear-gradient(45deg, black, #d8ffff);
+    color: whitesmoke;
+}
+
+
+.parallax_section {
+    height: 100vh; 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+
+.parallax_bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1;
+    min-height: 100%;
+    transform: translate3d(0, 0, -1px) scale(1); 
+}
+.img_1 .parallax_bg {
+    background-image: url("images/sam.jpg");
+}
+
+.img_2 .parallax_bg {
+    background-image: url("images/iph.jpg");
+}
+
+.parallax_section h2 {
+    margin: 0;
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#day{
+color: black;
+text-shadow: 6px 6px 6px rgba(51, 255, 245, 0.8);
+}
+#night{
+    color: whitesmoke;
+    text-shadow: 6px 6px 6px rgba(76, 250, 99, 0.8);
+}
