@@ -404,39 +404,64 @@ ul{
 }
 
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
-    padding: 40px 10%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on large screens */
+    }
 }
 
 .product-card {
-    background-color: #ffffff;
+    background-color: transparent; /* Transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    padding: 20px;
-    max-width: 300px;
+    padding-bottom: 10px;
     transition: transform 0.3s;
+    max-width: 100%;
 }
 
+.product-image {
+    position: relative;
+}
+
+
+.discount-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
 .product-card img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
 }
 
-.product-card h2 {
+.product-card h4 {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 10px 0 5px;
     color: #142824;
 }
 
 .product-card p {
     font-size: 18px;
     color: #555;
+    margin-bottom: 10px;
 }
 
 .product-card .btn {
@@ -450,6 +475,65 @@ ul{
 }
 
 .product-card .btn:hover {
+    background-color: #142824;
+    color: whitesmoke;
+}
+
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter, .sort {
+    display: flex;
+    align-items: center;
+}
+
+.filter label, .sort label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #142824;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #142824;
+    background-color: #ffffff;
+    color: #142824;
+}
+
+select:focus {
+    outline: none;
+    border-color: #136455;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.size-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #d1e8e2;
+    color: #142824;
+    border: 1px solid #142824;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.size-btn:hover {
     background-color: #142824;
     color: whitesmoke;
 }

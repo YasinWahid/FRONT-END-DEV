@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Garments - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <nav>
+        <label for="menu-toggle" class="menu-icon">&#9776;</label> 
+        <p class="logo">Atlas Garments</p> 
+        <div class="icons">
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <button type="submit">Search</button>
+            </div>
+            <a href="#" class="icon">🛒</a> 
+            <img src="images/yasin.jpg" class="profile">
+        </div>
+    </nav>
+  
+    <input type="checkbox" id="menu-toggle" />
+    <div id="sidebar" class="sidebar">
+        <label for="menu-toggle" class="close-btn">&times;</label> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html?category=men">Men</a></li>
+            <li><a href="product.html?category=women">Women</a></li>
+            <li><a href="product.html?category=kids">Kids</a></li>
+            <li><a href="product.html?category=fabrics">WholeSale Fabrics</a></li>
+            <li><a href="product.html?category=sale">Sale</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="product-banner">
+    <h1>Men's Collection</h1> <!-- Update dynamically if needed -->
+    <p>Explore our premium collection of men’s apparel.</p>
+</div>
+
+<div class="filter-sort-container">
+    <div class="filter">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterProducts()">
+            <option value="all">All</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+            <option value="kids">Kids</option>
+            <option value="sale">Sale</option>
+        </select>
+    </div>
+
+    <div class="sort">
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by" onchange="sortProducts()">
+            <option value="default">Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+        </select>
+    </div>
+</div>
+
+<div class="product-grid">
+
+    <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span>
+            <img src="images/men.jpg" alt="Product">
+        </div>
+        <h2>Product Name</h2>
+        <p>$39.99</p>
+        <div class="sizes">
+            <button class="size-btn" onclick="addToCart('small')">S</button>
+            <button class="size-btn" onclick="addToCart('medium')">M</button>
+            <button class="size-btn" onclick="addToCart('large')">L</button>
+            <button class="size-btn" onclick="addToCart('xl')">XL</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span>
+            <img src="images/men.jpg" alt="Product">
+        </div>
+        <h2>Product Name</h2>
+        <p>$39.99</p>
+        <div class="sizes">
+            <button class="size-btn" onclick="addToCart('small')">S</button>
+            <button class="size-btn" onclick="addToCart('medium')">M</button>
+            <button class="size-btn" onclick="addToCart('large')">L</button>
+            <button class="size-btn" onclick="addToCart('xl')">XL</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span>
+            <img src="images/men.jpg" alt="Product">
+        </div>
+        <h2>Product Name</h2>
+        <p>$39.99</p>
+        <div class="sizes">
+            <button class="size-btn" onclick="addToCart('small')">S</button>
+            <button class="size-btn" onclick="addToCart('medium')">M</button>
+            <button class="size-btn" onclick="addToCart('large')">L</button>
+            <button class="size-btn" onclick="addToCart('xl')">XL</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span>
+            <img src="images/men.jpg" alt="Product">
+        </div>
+        <h2>Product Name</h2>
+        <p>$39.99</p>
+        <div class="sizes">
+            <button class="size-btn" onclick="addToCart('small')">S</button>
+            <button class="size-btn" onclick="addToCart('medium')">M</button>
+            <button class="size-btn" onclick="addToCart('large')">L</button>
+            <button class="size-btn" onclick="addToCart('xl')">XL</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span>
+            <img src="images/men.jpg" alt="Product">
+        </div>
+        <h2>Product Name</h2>
+        <p>$39.99</p>
+        <div class="sizes">
+            <button class="size-btn" onclick="addToCart('small')">S</button>
+            <button class="size-btn" onclick="addToCart('medium')">M</button>
+            <button class="size-btn" onclick="addToCart('large')">L</button>
+            <button class="size-btn" onclick="addToCart('xl')">XL</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">20% OFF</span>
+            <img src="images/men.jpg" alt="Product">
+        </div>
+        <h2>Product Name</h2>
+        <p>$39.99</p>
+        <div class="sizes">
+            <button class="size-btn" onclick="addToCart('small')">S</button>
+            <button class="size-btn" onclick="addToCart('medium')">M</button>
+            <button class="size-btn" onclick="addToCart('large')">L</button>
+            <button class="size-btn" onclick="addToCart('xl')">XL</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <p class="logo">Atlas Garments</p> 
+            <p>High-quality clothing with exceptional style.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html?category=men">Men</a></li>
+                <li><a href="product.html?category=women">Women</a></li>
+                <li><a href="product.html?category=kids">Kids</a></li>
+                <li><a href="product.html?category=sale">Sale</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Atlas Garments | All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
