@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Monthly Expense Tracker</h1>
+    
+        <!-- Input for Monthly Salary -->
+        <label for="monthly-salary">Enter Monthly Salary:</label>
+        <input type="number" id="monthly-salary" placeholder="Enter your salary">
+        <button id="set-salary-btn" disabled>Set Monthly Salary</button>
+        <div class="salary-display" id="salary-display">
+          Your monthly salary will appear here.
+        </div>
+    
+        <!-- Section for Adding Expenses -->
+        <div class="expense-section">
+          <h2>Add an Expense</h2>
+          <label for="expense-name">Expense Name:</label>
+          <input type="text" id="expense-name" placeholder="Enter expense name">
+          
+          <label for="expense-amount">Expense Amount:</label>
+          <input type="number" id="expense-amount" placeholder="Enter expense amount">
+    
+          <label for="expense-category">Category:</label>
+          <select id="expense-category">
+            <option value="Transport">Transport</option>
+            <option value="Grocery">Grocery</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Other">Other</option>
+            <option value="Housing">Housing</option>
+            <option value="Food">Food & Groceries</option>
+            <option value="Education">Education</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Clothing">Clothing & Personal Care</option>
+            <option value="Insurance">Insurance</option>
+          </select>
+    
+          <button id="add-expense-btn" disabled>Add Expense</button>
+        </div>
+    
+       <!-- Section to Display Expenses -->
+<div class="expenses-list" id="expenses-list">
+    <h3>Expenses:</h3>
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Expense Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Expenses will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+    
+        <!-- Totals Section -->
+        <div class="totals-section" id="totals-section">
+          <div id="total-expenses">Total Expenses: Rs.0</div>
+          <div id="remaining-balance">Remaining Balance: Rs.0</div>
+        </div>
+    
+        <!-- Category Totals Section -->
+        <div class="category-totals" id="category-totals">
+          <div>Transport: Rs.0</div>
+          <div>Grocery: Rs.0</div>
+          <div>Utilities: Rs.0</div>
+          <div>Other: Rs.0</div>
+          <div>Housing: Rs.0</div>
+          <div>Food & Groceries: Rs.0</div>
+          <div>Education: Rs.0</div>
+          <div>Healthcare: Rs.0</div>
+          <div>Entertainment: Rs.0</div>
+          <div>Clothing & Personal Care: Rs.0</div>
+          <div>Insurance: Rs.0</div>
+        </div>
+    
+        <!-- Button to Clear All Expenses -->
+        <button id="clear-expenses-btn">Clear All Expenses</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

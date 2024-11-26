@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0B0C10; /* Dark Charcoal background */
+    color: #C5C6C7; /* Light gray text */
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto ;
+    background-color: #1F2833; /* Dark Slate Blue background for containers */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #45A29E; /* Muted Teal border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1F2833; /* Dark Slate Blue background for inputs */
+    color: #C5C6C7; /* Light gray text for inputs */
+}
+
+button {
+    background-color: #66FCF1; /* Aqua Blue background for buttons */
+    color: #0B0C10; /* Dark text color for buttons */
+    border: 1px solid #66FCF1; /* Aqua Blue border for buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45A29E; /* Muted Teal for button hover */
+    border-color: #45A29E; /* Muted Teal border on hover */
+}
+
+button:disabled {
+    background-color: #C5C6C7; /* Disabled button with light gray color */
+    cursor: not-allowed;
+}
+
+.salary-display, .expense-section {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #66FCF1; /* Aqua Blue for salary and expense section */
+}
+
+.expenses-list {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #1F2833; /* Dark Slate Blue background for expenses list */
+    color: #C5C6C7; /* Light gray text color for expense items */
+}
+
+.totals-section {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #66FCF1; /* Aqua Blue border for totals section */
+    border-radius: 5px;
+    background: #1F2833; /* Dark Slate Blue background for totals section */
+    text-align: center;
+    color: #66FCF1; /* Aqua Blue text color for totals section */
+}
+
+.totals-section div {
+    margin: 10px 0;
+}
+
+.category-totals {
+    margin-top: 20px;
+    color: #66FCF1; /* Aqua Blue text color for category totals */
+}
+
+.category-totals div {
+    font-weight: bold;
+}
+
+canvas {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #1F2833; /* Dark Slate Blue background for table */
+    color: #C5C6C7; /* Light gray text color for table content */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #45A29E; /* Muted Teal border for table cells */
+}
+
+table th {
+    background-color: #66FCF1; /* Aqua Blue background for table headers */
+    color: #0B0C10; /* Dark text in table headers */
+}
+
+table tr:nth-child(even) {
+    background-color: #1F2833; /* Dark Slate Blue background for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #0B0C10; /* Dark Charcoal background for odd rows */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .salary-display, .expense-section, .expenses-list, .totals-section, .category-totals {
+        font-size: 14px;
+    }
+
+    input, select, button {
+        padding: 10px;
+    }
+
+    .totals-section, .category-totals {
+        margin-top: 15px;
+    }
+
+    .category-totals div {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .totals-section, .category-totals {
+        font-size: 12px;
+    }
+
+    input, select, button {
+        padding: 8px;
+    }
+}
