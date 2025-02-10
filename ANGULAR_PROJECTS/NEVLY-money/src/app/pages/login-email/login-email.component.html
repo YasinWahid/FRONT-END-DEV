@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="login-panel row">
+      <div class="col-md-6 left-container">
+          <h1>WELCOME BACK</h1>
+          <p>Enter the email associated with your account</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+              <input type="text" class="form-control ms-2" placeholder="Enter Email Address" />
+          </div>
+          <a href="">Lost access to my email</a>
+          <button class="btn btn1">Continue</button>
+          <p class="text-center">or</p>
+          <button class="btn btn2" [routerLink]="'/login-phone'">Continue with Phone</button>
+          <button class="btn btn2">
+              <img src="imgs/google.png" alt="Google Logo" class="me-2"> Continue with Google
+          </button>
+          <button class="btn btn2">
+              <img src="imgs/apple.png" alt="Apple Logo" class="me-2"> Continue with Apple
+          </button>
+          <button class="btn btn3 text-center">Create Account</button>
+      </div>
+
+      <!-- Right Container -->
+      <div class="col-md-6 right-container">
+          <img src="imgs/nevly-pink.png" alt="Image 1" />
+          <img src="imgs/qr.png" alt="QR Code" />
+          <h2>Log in with QR Code</h2>
+          <h3>Scan this code with your phone camera to log in instantly</h3>
+      </div>
+  </div>
+</div>

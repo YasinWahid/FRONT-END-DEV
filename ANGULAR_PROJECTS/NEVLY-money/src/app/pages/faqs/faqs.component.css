@@ -1,0 +1,208 @@
+/* General Styles */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/* Top Section */
+.top-container {
+    background-color: #003333;
+    color: white;
+    padding: 200px 112px 132px 80px;
+    font-family: poppins;
+    text-align: center;
+}
+
+.top-container h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.top-container p {
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Bottom Section */
+.bottom-container {
+    background-color: white;
+    padding: 96px 83px;
+    font-family: poppins;
+}
+
+.support {
+    font-weight: 600;
+    font-size: 16px;
+    color: #6941C6;
+}
+
+.service {
+    font-weight: 900;
+    font-size: 48px;
+    color: #101828;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 16px;
+    color: #191C1F;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-button {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 16px;
+    color: #101828;
+}
+
+.accordion-body {
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #475467;
+}
+
+.accordion {
+    margin-bottom: 119px;
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+}
+
+/* Contact Support Section */
+.contact-support {
+    font-family: poppins;
+    background: #1E4C53;
+    border-radius: 16px;
+    padding: 64px 206px;
+    text-align: center;
+}
+
+.contact-support h1 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFA8E1;
+}
+
+.contact-support p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.contact-support button {
+    width: 352px;
+    height: 59px;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 16px;
+    border: 1px solid #CBEEE2;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.contact-support button:hover {
+    background-color: #CBEEE2;
+    color: #1E4C53;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .top-container {
+        padding: 150px 40px 100px 40px;
+    }
+
+    .top-container h1 {
+        font-size: 2rem;
+    }
+
+    .top-container p {
+        font-size: 18px;
+    }
+
+    .bottom-container {
+        padding: 80px 40px;
+    }
+
+    .service {
+        font-size: 36px;
+    }
+
+    .contact-support {
+        padding: 50px 100px;
+    }
+
+    .contact-support h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-container {
+        padding: 100px 20px 80px 20px;
+    }
+
+    .top-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .top-container p {
+        font-size: 16px;
+    }
+
+    .bottom-container {
+        padding: 60px 20px;
+    }
+
+    .service {
+        font-size: 28px;
+    }
+
+    .contact-support {
+        padding: 40px 50px;
+    }
+
+    .contact-support h1 {
+        font-size: 36px;
+    }
+
+    .contact-support button {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-container {
+        padding: 80px 15px;
+    }
+
+    .top-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .top-container p {
+        font-size: 14px;
+    }
+
+    .bottom-container {
+        padding: 50px 15px;
+    }
+
+    .service {
+        font-size: 24px;
+    }
+
+    .contact-support {
+        padding: 30px 20px;
+    }
+
+    .contact-support h1 {
+        font-size: 28px;
+    }
+}

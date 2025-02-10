@@ -1,0 +1,44 @@
+<div class="container-fluid p-0">
+    <!-- Top Green Section -->
+    <div class="top-container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-white">TOP QUESTIONS ABOUT US</h1>
+            <p class="text-white">Need something cleared up? Here are our most frequently asked questions.</p>
+        </div>
+    </div>
+
+    <!-- Bottom White Section -->
+    <div class="bottom-container">
+        <div class="content">
+            <div class="row" *ngFor="let service of services; let i = index">
+                <div class="col-md-6">
+                    <p class="support fw-bold">Support</p>
+                    <h2 class="service">{{ service.name }}</h2>
+                    <p class="desc">{{ service.description }}</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" [id]="'faqAccordion' + i">
+                        <div class="accordion-item" *ngFor="let question of service.questions; let j = index">
+                            <h2 class="accordion-header" [id]="'heading' + i + j">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                    [attr.data-bs-target]="'#collapse' + i + j" aria-expanded="false" 
+                                    [attr.aria-controls]="'collapse' + i + j">
+                                    <span class="que me-2"></span> {{ question.q }}
+                                </button>
+                            </h2>
+                            <div [id]="'collapse' + i + j" class="accordion-collapse collapse" 
+                                [attr.aria-labelledby]="'heading' + i + j" [attr.data-bs-parent]="'#faqAccordion' + i">
+                                <div class="ans accordion-body">{{ question.a }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-support text-center">
+            <h1>STILL HAVE QUESTIONS?</h1>
+            <p>If there are still questions that our FAQs haven't answered, reach out to us and we ensure that you get the information you need.</p>
+            <button class="btn">Contact Support</button>
+        </div>
+    </div>
+</div>

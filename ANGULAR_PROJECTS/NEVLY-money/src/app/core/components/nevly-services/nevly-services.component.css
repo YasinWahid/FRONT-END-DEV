@@ -1,0 +1,237 @@
+.services-header{
+   margin: 36px 144px 53px 144px;
+}
+.services-header h1{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.services-header p{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.join-now {
+    background:#FFA8E1;
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1E4C53;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px auto;
+    margin-top: 32px;
+  }
+
+/* Horizontal Scroll Setup */
+.scroll-container {
+  display: flex;
+  padding: 20px 40px; /* Increased padding for better spacing */
+  overflow-x: hidden; /* Change from hidden to auto */
+  scroll-snap-type: x mandatory;
+  gap:4px;
+  white-space: nowrap;
+  transition: scroll 0.5s ease-in-out;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 370px;
+  border-radius: 16px;
+  background: #131414;
+  color: white;
+  text-align: center;
+  scroll-snap-align: center;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+.card h1 {
+  font-size: 36px; 
+  font-family: poppins;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 25px 0px 25px;
+  width: 330px;
+  line-height: 45px; 
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.card.active {
+  transform: scale(1.02); 
+  background: #1a1a1a;
+  box-shadow: 0px 4px 15px rgba(255, 255, 0, 0.5);
+  position: relative;
+  z-index: 10; 
+}
+
+
+/* Change Title Color for Active Card */
+.card.active h1 {
+  color: #FBE07E;
+}
+
+/* Change Button Style for Active Card */
+.card.active .nav-right {
+  background: #FBE07E;
+  color: black;
+} 
+
+/* Dots Indicator */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background-color: #1E4C53;
+}
+
+
+
+  .nav-right {
+    width: 54px;
+    height: 54px;
+    background: white; /* Set background to white */
+    font-size: 2.5rem;
+    color: #003333; /* Adjust text color for contrast */
+    border-radius: 50%; /* Makes it a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Positioning inside a card */
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+  }
+  
+
+  /* Popup Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #131414;
+  height: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.popup-content h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+  font-family: poppins;
+  text-align: left;
+}
+
+.popup-content p {
+  font-weight: 500;
+  font-family: poppins;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+}
+
+.popup-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  color: #FBE07E;
+  line-height: 1.2;
+}
+
+.popup-content li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: poppins;
+}
+.popup-content li::marker {
+  color: #92D590;
+  font-size: 1.5rem; 
+}
+
+.popup-content img {
+  max-width: 70%;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.featured{
+  background: #EDEDED;
+  border-top: 1px solid #000000;
+  margin-top: 75px;
+}
+
+.featured h2{
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+.featured img{
+  width: 90%;
+  margin: 31px 0px;
+}
+
+
+@media (max-width: 768px) {
+  .services-header {
+    margin: 20px;
+    text-align: center;
+  }
+  .services-header h1 {
+    font-size: 2.5rem;
+  }
+  .services-header p {
+    font-size: 1rem;
+  }
+  .join-now{
+    width: 264px;
+    height: 60px;
+    font-size: 26px;    
+  }
+}

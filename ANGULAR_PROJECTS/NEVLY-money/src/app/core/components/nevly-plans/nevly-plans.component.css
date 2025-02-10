@@ -1,0 +1,182 @@
+.container {
+  margin-bottom: 81px;
+}
+.plan-header {
+  font-family: Poppins, sans-serif;
+  margin: 40px auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.plan-header h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.plan-header p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid #92D59080;
+  font-family: Poppins, sans-serif;
+  background: white;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #475467;
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.per-month {
+  font-weight: 400;
+  font-size: 18px;
+  color: gray;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.card li::before {
+  content: "✔";
+  color: white;
+  width: 22px;
+  height: 22px;
+  background: #92D590;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #003333;
+  border: 2px solid #101828;
+}
+
+.card:hover h1,
+.card:hover h2,
+.card:hover h4,
+.card:hover p,
+.card:hover ul li {
+  color: white;
+}
+
+.card:hover h3 {
+  color: #92D590;
+}
+
+.get-started {
+  background: #131414;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFA8E1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.get-started:hover {
+  background: #FFA8E1;
+  color: #131414;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plan-header h1 {
+    font-size: 2rem;
+  }
+
+  .plan-header p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 15px;
+    height: 521px;
+    margin: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .plan-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .plan-header p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .per-month {
+    font-size: 14px;
+  }
+
+  .get-started {
+    font-size: 14px;
+    height: 40px;
+  }
+}

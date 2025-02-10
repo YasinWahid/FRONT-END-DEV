@@ -1,0 +1,50 @@
+.container-fluid {
+    background: #003333;
+    padding: 66px 60px;
+}
+
+
+.footer-content h3 {
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 19px;
+    color: #92D590;
+    margin-bottom: 50px;
+}
+
+.footer-content a {
+    font-family: poppins;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    color: #EDEDED;
+    display: block;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.footer-content a:hover {
+    color: #FFA8E1;
+}
+
+.footer-content .download-app img {
+    display: block;
+    margin-bottom: 21px;
+}
+
+.footer-end {
+    margin-top: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credit{
+    font-family: poppins;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 22px;
+    color: white;
+    text-align: center;
+    flex-grow: 1; 
+}

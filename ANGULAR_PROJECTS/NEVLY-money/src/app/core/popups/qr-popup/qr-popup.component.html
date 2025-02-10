@@ -1,0 +1,26 @@
+<div *ngIf="isPopupVisible" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" (click)="closePopup()">×</span>
+    <h2>Get the Nevly Money App</h2>
+    <p>Scan the QR code to download the app</p>
+    <img src="imgs/qr.png" alt="QR Code" class="qr-image">
+    <p>or get a download link via SMS</p>
+    <div class="phone-number-container">
+      <select class="country-code">
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+92">+92 (Pakistan)</option>
+        <option value="+91">+91 (India)</option>
+        <option value="+61">+61 (Australia)</option>
+        <option value="+49">+49 (Germany)</option>
+        <option value="+33">+33 (France)</option>
+        <option value="+81">+81 (Japan)</option>
+        <option value="+55">+55 (Brazil)</option>
+        <option value="+34">+34 (Spain)</option>
+        <option value="+86">+86 (China)</option>
+      </select>
+      <input type="tel" placeholder="Mobile Number" class="phone-input" />
+      <button class="right-arrow-btn">→</button>
+    </div>
+  </div>
+</div>

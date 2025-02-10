@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="services-header text-center">
+      <h1>NEVLY MONEY SERVICES</h1>
+      <p>
+        Nevly Money was designed to allow members who are ready to start their
+        journey towards improving their credit access to the tools needed to
+        improve their credit profile as well as address many of the root causes
+        responsible for poor credit scores.
+      </p>
+      <button class="btn join-now">
+        JOIN NOW <img src="imgs/arrow.png" alt="Arrow" />
+      </button>
+    </div>
+  
+    <div class="container mt-4">
+      <div class="scroll-container" #scrollContainer>
+        <div class="card" *ngFor="let card of cards; let i = index">
+          <h1>{{ card.title }}</h1>
+          <img [src]="card.imgSrc" alt="{{ card.title }}">
+          <button class="btn nav-right" (click)="openPopup(card)">
+            &#8594;
+          </button>
+        </div>
+      </div>
+  
+      <!-- Dots Indicator -->
+      <div class="dots-container">
+        <span *ngFor="let card of cards; let i = index"
+              [class.active]="i === activeIndex"
+              class="dot"
+              (click)="scrollToIndex(i)">
+        </span>
+      </div>
+    </div>
+  
+    <!-- Popup Modal -->
+    <div class="popup-overlay" *ngIf="popupCard">
+      <div class="popup-content">
+        <button class="close-btn" (click)="closePopup()">×</button>
+        <h1>{{ popupCard.title }}</h1>
+        <p>{{ popupCard.description }}</p>
+        <ul>
+          <li *ngFor="let point of popupCard.bulletPoints">{{ point }}</li>
+        </ul>
+        <img [src]="popupCard.imgSrc" alt="{{ popupCard.title }}">
+      </div>
+    </div>
+  </div>
+  <div class="featured text-center">
+    <h2>FEATURED ON</h2>
+    <img src="imgs/features.png" alt="">
+  </div>
+  

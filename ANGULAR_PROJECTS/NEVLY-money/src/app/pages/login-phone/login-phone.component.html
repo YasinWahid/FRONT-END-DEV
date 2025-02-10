@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="login-panel row">
+      <div class="col-md-6 left-container">
+          <h1>WELCOME BACK</h1>
+          <p>Enter the phone number associated with your account</p>
+          <div class="d-flex justify-content-center align-items-center mb-3">
+              <select class="form-select w-auto" id="country-code">
+                  <option value="+1">+1 (USA)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+92">+92 (Pakistan)</option>
+                  <option value="+91">+91 (India)</option>
+                  <option value="+61">+61 (Australia)</option>
+                  <option value="+49">+49 (Germany)</option>
+                  <option value="+33">+33 (France)</option>
+                  <option value="+81">+81 (Japan)</option>
+                  <option value="+55">+55 (Brazil)</option>
+                  <option value="+34">+34 (Spain)</option>
+                  <option value="+86">+86 (China)</option>
+              </select>
+              <input type="text" class="form-control ms-2" placeholder="Phone number" />
+          </div>
+          <a href="">Lost access to my phone</a>
+          <button class="btn btn1">Continue</button>
+          <p class="text-center">or</p>
+          <button class="btn btn2" [routerLink]="'/login-email'">Continue with email</button>
+          <button class="btn btn2">
+              <img src="imgs/google.png" alt="Google Logo" class="me-2"> Continue with Google
+          </button>
+          <button class="btn btn2">
+              <img src="imgs/apple.png" alt="Apple Logo" class="me-2"> Continue with Apple
+          </button>
+          <button class="btn btn3 text-center">Create Account</button>
+      </div>
+
+      <!-- Right Container -->
+      <div class="col-md-6 right-container">
+          <img src="imgs/nevly-pink.png" alt="Image 1" />
+          <img src="imgs/qr.png" alt="QR Code" />
+          <h2>Log in with QR Code</h2>
+          <h3>Scan this code with your phone camera to log in instantly</h3>
+      </div>
+  </div>
+</div>

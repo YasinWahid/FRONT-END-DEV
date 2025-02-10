@@ -1,0 +1,182 @@
+.left-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: poppins, sans-serif;
+    padding: 149px 36px 119px 148px;
+}
+
+.left-container h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.left-container p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+.left-container select,
+.left-container input,
+.left-container button {
+    padding: 10px;
+    width: 100%;
+}
+.left-container a {
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+.btn {
+    border-radius: 50px;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    height: 52px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    border: 1px solid #D0D5DD;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn1 {
+    background: #1D5A60;
+    color: white;
+}
+
+.btn1:hover {
+    background: #16494E;
+}
+
+.btn2 {
+    background: #D9D9D9;
+}
+
+.btn2:hover {
+    background: #C0C0C0;
+}
+
+.btn3 {
+    color: #003333;
+    background: transparent;
+}
+
+.btn3:hover {
+    background: #003333;
+    color: white;
+}
+
+/* Right Container Styles */
+.right-container {
+    background: #003333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.right-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+.right-container h2 {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.right-container h3 {
+    color: #FFFFFF8C;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 18px 80px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .left-container {
+        padding: 100px 20px;
+    }
+
+    .right-container h2 {
+        font-size: 24px;
+    }
+
+    .right-container h3 {
+        font-size: 20px;
+        margin: 18px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-container {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .left-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .left-container p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .right-container {
+        padding: 30px;
+    }
+
+    .right-container h2 {
+        font-size: 22px;
+    }
+
+    .right-container h3 {
+        font-size: 18px;
+        margin: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left-container {
+        padding: 50px 15px;
+    }
+
+    .left-container h1 {
+        font-size: 2rem;
+    }
+
+    .left-container p {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .right-container {
+        padding: 20px;
+    }
+
+    .right-container h2 {
+        font-size: 20px;
+    }
+
+    .right-container h3 {
+        font-size: 16px;
+        margin: 12px 20px;
+    }
+}

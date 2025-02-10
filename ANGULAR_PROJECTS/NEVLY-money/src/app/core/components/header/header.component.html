@@ -1,0 +1,52 @@
+<header>
+  <nav class="navbar navbar-expand-lg px-8">
+    <a class="navbar-brand"  [routerLink]="'/'">
+      <img src="imgs/brand.png" class="img-fluid" style="max-height: 40px;" alt="Brand Logo">
+    </a>
+
+    <button class="navbar-toggler d-lg-none" type="button" (click)="toggleSidebar()">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('guide')">HOW NEVLY MONEY WORKS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('services')">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('plans')">SUBSCRIPTION PLANS</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/faqs'">FAQs</a>
+        </li>
+      </ul>
+    </div>
+    <div class="btns d-flex">
+
+      <a class="login btn me-3 d-none d-lg-inline-block"  [routerLink]="'/login-phone'">LOGIN</a>
+      <a class="join-now btn">JOIN NOW</a>
+    </div>
+  </nav>
+
+  <div id="sidebarMenu" [ngClass]="{'show': isSidebarVisible}">
+    <ul class="navbar-nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link d-lg-none" (click)="scrollToSection('guide')">HOW NEVLY MONEY WORKS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-lg-none" (click)="scrollToSection('services')">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-lg-none" (click)="scrollToSection('plans')">SUBSCRIPTION PLANS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-lg-none" [routerLink]="'/faqs'">FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a class="login btn mb-2 d-lg-none text-center"  [routerLink]="'/login'">LOGIN</a>
+      </li>
+    </ul>
+  </div>
+</header>

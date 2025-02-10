@@ -1,0 +1,32 @@
+<div class="container text-center">
+  <div class="plan-header">
+    <h1>A PLAN FOR EVERYONE</h1>
+    <p>
+      Our mission is simple. Recognize that we all choose to do the work when we
+      are ready. So we've created our subscription plans to accommodate this
+      fact.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-sm-12 mb-4" *ngFor="let plan of plans">
+      <div class="card shadow-sm p-4">
+        <div class="card-content">
+          <h2>{{ plan.name }}</h2>
+          <h3>
+            <span class="price">{{ plan.price }}</span>
+            <span class="per-month" *ngIf="plan.name !== 'Nevly Starter'"
+              >/ Per Month</span
+            >
+          </h3>
+          <h4>Features and Benefits</h4>
+          <p>{{ plan.description }}</p>
+          <ul class="text-start">
+            <li *ngFor="let feature of plan.features">{{ feature }}</li>
+          </ul>
+        </div>
+        <button class="btn btn-primary get-started">GET STARTED</button>
+      </div>
+    </div>
+  </div>
+</div>
