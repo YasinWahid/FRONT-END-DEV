@@ -40,7 +40,7 @@
               "src/custom-theme.scss",
               "src/styles.css",
               "../NEVLY-money/node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "../practice/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+              "../NEVLY-money/node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": [
                "../NEVLY-money/node_modules/bootstrap/dist/js/bootstrap.min.js"
