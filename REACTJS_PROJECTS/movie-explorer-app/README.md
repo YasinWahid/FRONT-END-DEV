@@ -1,6 +1,3 @@
-
-
-```markdown
 # Movie Explorer App
 
 ## Introduction
